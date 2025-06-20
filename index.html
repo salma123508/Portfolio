@@ -1,0 +1,211 @@
+<!-- 
+    Instructions for customization:
+
+    1. Page Title: 
+       - Find the <title> tag in the <head> section and change "My Portfolio" to your name.
+
+    2. Navigation:
+       - The navigation links in the <header> point to different sections of the page. If you add, remove, or rename a section, make sure to update the `href` attribute in the `<a>` tag and the `id` of the corresponding `<section>`.
+
+    3. Intro Section:
+       - In the <section id="intro">, you can change the h1 and p tags to your desired welcome message.
+
+    4. About Me Section:
+       - In the <section id="about">, replace the placeholder text with a paragraph about yourself. You can also add a profile picture here. For example:
+         <img src="images/your-photo.jpg" alt="Your Name" style="width:150px;border-radius:50%;">
+
+    5. Projects Section:
+       - For each project in <section id="projects">, update the <h3> for the project title and the <p> for the description. You can add more `<div class="project-card">` for more projects.
+
+    6. Contact Section:
+       - In <section id="contact">, change the email address in the `mailto:` link to your own email.
+
+    7. Footer:
+       - In the <footer>, change "Your Name" to your actual name.
+
+    8. Adding Images:
+       - Place your images in the `images` folder.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salma Shaik - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">Salma Shaik</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!--<li><a href="#resume">Resume</a></li>-->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <h1>HI! I'M Salma Shaik</h1>
+                <div class="hero-divider"></div>
+                <p class="hero-description">Bioinformatics and clinical research specialist leveraging machine learning to decode biological patterns and advance data-driven healthcare.</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About me</h2>
+                <div class="about-divider"></div>
+                <div class="about-content-wrapper">
+                    <div class="about-image">
+                        <!-- TODO: Replace with your photo. Suggested size: 300x300px -->
+                        <img src="images/profile.jpeg" alt="Salma Shaik Profile Picture">
+                    </div>
+                    <div class="about-text">
+                        <p>I am a dedicated Bioinformatics professional with certified expertise in Clinical Trials. I specialize in developing data-driven solutions that address complex biological and healthcare challenges by integrating genomic data analysis, machine learning, and computational biology.</p>
+                        <p>Proficient in Python, R, and various bioinformatics tools and databases, I have contributed to projects involving RNA-seq and ChIP-seq analysis, protein structure prediction, drug discovery, and AI-driven clinical applications. I am passionate about leveraging open-source, reproducible methods to generate actionable insights that advance precision medicine and clinical research.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-divider"></div>
+                <div class="projects-grid-new">
+                    
+                    <div class="project-card-new">
+                        <div class="project-image">
+                            <!-- TODO: Replace with your project image. Suggested size: 600x400px -->
+                            <img src="https://placehold.co/600x400/1e293b/a855f7?text=PCOS+Genetics" alt="Genetics of PCOS Project">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title-gradient">Genetics of PCOS: Bioinformatics Analysis</h3>
+                            <p class="project-description">
+                                A comprehensive bioinformatics study analyzing 43 proteins responsible for Polycystic Ovarian Syndrome (PCOS). Utilized computational modeling tools to identify protein structures, performed phylogenetic analysis, and conducted microarray analysis on GEO datasets to understand PCOS mechanisms.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Computational Biology</span><span class="tag">Python</span><span class="tag">Bioinformatics Tools</span><span class="tag">R</span><span class="tag">NCBI</span><span class="tag">PDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card-new">
+                        <div class="project-image">
+                            <!-- TODO: Replace with your project image. Suggested size: 600x400px -->
+                            <img src="https://placehold.co/600x400/1e293b/a855f7?text=Lung+Disease+AI" alt="Lung Disease Classification Project">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title-gradient">Lung Disease Classification using Deep Learning</h3>
+                            <p class="project-description">
+                                Developed a multi-class deep learning model for classifying lung diseases from chest X-rays, achieving 96.76% accuracy. Implemented and compared ResNeXt50 and VGG16 architectures to distinguish between Normal, Pneumonia, COVID-19, and Tuberculosis cases.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Medical AI</span><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Deep Learning</span><span class="tag">Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-new">
+                        <div class="project-image">
+                            <!-- TODO: Replace with your project image. Suggested size: 600x400px -->
+                            <img src="https://placehold.co/600x400/1e293b/a855f7?text=Sentiment+Analysis" alt="Sentiment Analysis Project">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title-gradient">Multi-Model Sentiment Analysis on Emotion Data</h3>
+                            <p class="project-description">
+                                Built a comprehensive sentiment analysis system comparing XGBoost, SVM, and LSTM models for emotion classification. Performed extensive hyperparameter tuning using grid search to optimize performance across different model architectures on a Twitter emotion dataset.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">NLP</span><span class="tag">Python</span><span class="tag">XGBoost</span><span class="tag">LSTM</span><span class="tag">SVM</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-new">
+                        <div class="project-image">
+                            <!-- TODO: Replace with your project image. Suggested size: 600x400px -->
+                            <img src="https://placehold.co/600x400/1e293b/a855f7?text=Bank+Database" alt="Bank Management System Project">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title-gradient">Bank Management Database System</h3>
+                            <p class="project-description">
+                                Designed a full-stack bank management system with a normalized 3NF database schema. Built RESTful APIs and a dynamic web interface using Flask and SQLAlchemy for account management, transaction processing, and loan handling.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Web Development</span><span class="tag">Database Design</span><span class="tag">Flask</span><span class="tag">SQL</span><span class="tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-new">
+                        <div class="project-image">
+                            <!-- TODO: Replace with your project image. Suggested size: 600x400px -->
+                            <img src="https://placehold.co/600x400/1e293b/a855f7?text=Web+Scraping" alt="Web Scraping Project">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title-gradient">Academic Web Scraping & Data Analysis</h3>
+                            <p class="project-description">
+                                Developed an automated R web scraping system to extract and analyze academic journal data. Implemented robust CSS selector-based extraction with comprehensive error handling and created insightful visualizations using ggplot2.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Data Engineering</span><span class="tag">R</span><span class="tag">rvest</span><span class="tag">ggplot2</span><span class="tag">Web Scraping</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="publications-section">
+            <div class="container">
+                <h2>Publications & Research</h2>
+                <div class="publications-divider"></div>
+                <div class="publication-list">
+                    <div class="publication-item">
+                        <p class="publication-item-title">
+                            Unveiling the Potential of Therapeutic Mesenchymal Stem Cells in Cancer Treatment
+                            <span class="journal-name">International Journal of Advanced Research (IJAR)</span>
+                        </p>
+                        <a href="https://www.journalijar.com/article/48106/beyond-the-genes:-unveiling-the-power-of-metabolome-interactions-for-biomedical-progress/" target="_blank" class="publication-button">
+                            View Publication
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get In Touch!</h2>
+                <div class="contact-divider"></div>
+                <div class="contact-content">
+                    <p>I'm always interested in new opportunities and collaborations in bioinformatics and computational biology.</p>
+                    <div class="contact-links">
+                        <a href="mailto:asmasalmask@gmail.com" class="contact-link">Email</a>
+                        <a href="https://www.linkedin.com/in/salma-shaik-42401517b/" class="contact-link">LinkedIn</a>
+                        <a href="https://github.com/salma123508" class="contact-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

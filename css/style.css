@@ -1,0 +1,462 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #e2e8f0;
+    background-color: #090040; /* Deep Navy Background */
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header and Navigation */
+header {
+    background: #090040; /* Deep Navy Header */
+    border-bottom: 1px solid #471396; /* Royal Purple Border */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: transform 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #94a3b8;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #B13BFF; /* Bright Lavender Hover */
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 120px 0 80px;
+    text-align: center;
+    background: #471396; /* Royal Purple Background */
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.hero-divider {
+    width: 60px;
+    height: 4px;
+    background: #FFCC00; /* Golden Yellow Accent */
+    margin: 2rem auto;
+    border-radius: 2px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    opacity: 0.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.about-divider,
+.projects-divider,
+.contact-divider {
+    width: 60px;
+    height: 4px;
+    background: #38bdf8;
+    margin: 2rem auto;
+    border-radius: 2px;
+}
+
+/* About Section */
+.about-section {
+    background-color: #090040; /* Deep Navy Background */
+    color: #e2e8f0;
+}
+
+.about-section h2 {
+    color: #fff;
+}
+
+.about-section .about-divider {
+    background: #B13BFF; /* Bright Lavender Accent */
+}
+
+.about-content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 3rem auto 0;
+}
+
+.about-image {
+    flex-shrink: 0;
+}
+
+.about-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 3px solid #B13BFF; /* Bright Lavender Border */
+    box-shadow: none;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    color: #94a3b8;
+}
+
+@media (max-width: 992px) {
+    .about-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Old about-content style, can be removed if not used elsewhere */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Projects Section - Dark Theme */
+.projects-section {
+    background-color: #090040; /* Deep Navy Background */
+    color: #e2e8f0;
+}
+
+.projects-section h2 {
+    color: #fff;
+}
+
+.projects-section .projects-divider {
+    background: #B13BFF; /* Bright Lavender Accent */
+}
+
+.projects-grid-new {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.project-card-new {
+    background: #1e293b; /* A neutral dark slate for cards */
+    border-radius: 8px;
+    padding: 2.5rem;
+    border: 1px solid #471396; /* Royal Purple Border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.project-card-new:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.project-card-new:hover {
+    border-color: #FFCC00; /* Golden Yellow Hover */
+}
+
+.project-image {
+    flex: 1;
+    max-width: 450px;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project-content {
+    flex: 1;
+}
+
+.project-title-gradient {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #B13BFF, #FFCC00); /* Lavender to Yellow Gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tag {
+    background-color: #471396; /* Royal Purple Tags */
+    color: #e2e8f0;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Remove old project styles to avoid conflicts */
+.projects-grid, .project-card, .project-card:hover, .project-category, .project-card h3, .project-role, .project-card p {
+    /* This will need to be replaced with a proper removal of old styles. */
+    /* For now, just overriding a few properties. */
+    all: unset;
+}
+.projects-grid {
+    display: none; /* Hide the old grid */
+}
+
+/* Contact Section */
+.contact-section {
+    background: #090040; /* Deep Navy Background */
+    text-align: center;
+}
+
+.contact-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #94a3b8;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #B13BFF; /* Bright Lavender Button */
+    color: #090040; /* Dark text for contrast */
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+    background: #FFCC00; /* Golden Yellow Hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section {
+        padding: 100px 0 60px;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .project-card-new, .project-card-new:nth-child(even) {
+        flex-direction: column;
+    }
+}
+
+/* Remove old skills styles */
+.skills-section, .skills-divider, .skills-grid, .skill-category {
+    display: none;
+}
+
+/* Remove old publication styles */
+.publication-card, .publication-image, .publication-details, .publication-title, .journal-name, .publication-info, .publication-link, .publication-link:hover {
+    all: unset;
+}
+.publication-card {
+    display: none;
+}
+
+/* New Publications Section Styles */
+.publications-section {
+    background-color: #090040; /* Deep Navy Background */
+}
+
+.publications-divider {
+    width: 60px;
+    height: 4px;
+    background: #B13BFF; /* Bright Lavender Accent */
+    margin: 2rem auto 3rem;
+    border-radius: 2px;
+}
+
+.publication-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.publication-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #471396; /* Royal Purple Border */
+}
+
+.publication-item:first-child {
+    border-top: 1px solid #471396; /* Royal Purple Border */
+}
+
+.publication-item-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    flex-grow: 1;
+    margin-right: 1.5rem;
+}
+
+.publication-item-title .journal-name {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #94a3b8;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+.publication-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #B13BFF; /* Bright Lavender Button */
+    color: #090040; /* Dark text for contrast */
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;
+}
+
+.publication-button:hover {
+    background: #FFCC00; /* Golden Yellow Hover */
+}
+
+@media (max-width: 768px) {
+    .publication-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+} 
