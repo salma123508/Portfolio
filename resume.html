@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salma Shaik - Resume</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { background: #090040; color: #e2e8f0; }
+        .resume-container { max-width: 900px; margin: 40px auto; background: #1e293b; border-radius: 12px; box-shadow: 0 4px 24px #09004044; padding: 40px 32px; }
+        .resume-header { display: flex; flex-direction: column; align-items: flex-start; border-bottom: 2px solid #471396; padding-bottom: 24px; margin-bottom: 32px; }
+        .resume-header h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.25rem; color: #fff; }
+        .resume-header h2 { font-size: 1.25rem; font-weight: 500; color: #B13BFF; margin-bottom: 0.5rem; }
+        .resume-contact { font-size: 1rem; color: #94a3b8; margin-bottom: 0.5rem; }
+        .resume-section { margin-bottom: 32px; }
+        .resume-section h3 { color: #FFCC00; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 600; }
+        .resume-section ul, .resume-section p { margin-bottom: 0.5rem; }
+        .resume-section ul { padding-left: 1.2em; }
+        .resume-section li { margin-bottom: 0.25rem; }
+        .resume-subtitle { color: #B13BFF; font-weight: 600; font-size: 1.1rem; margin-bottom: 0.2rem; }
+        .resume-job-title { font-weight: 600; color: #fff; }
+        .resume-date { color: #38bdf8; font-size: 0.95rem; margin-left: 0.5em; }
+        .resume-download { display: inline-block; margin-bottom: 24px; padding: 10px 24px; background: #B13BFF; color: #090040; border: none; border-radius: 6px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: background 0.3s; }
+        .resume-download:hover { background: #FFCC00; }
+        @media (max-width: 600px) { .resume-container { padding: 16px 4px; } }
+        @media print { .resume-download { display: none; } body { background: #fff; color: #222; } .resume-container { box-shadow: none; background: #fff; color: #222; } }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <button class="resume-download" onclick="window.print()">Download as PDF</button>
+        <div class="resume-header">
+            <h1>Salma Shaik</h1>
+            <h2>Computational Biologist | Bioinformatics Specialist</h2>
+            <div class="resume-contact">
+                📧 asmasalmask@gmail.com &nbsp;|&nbsp; 📱 +1-603-932-8414 &nbsp;|&nbsp; 
+                🌐 <a href="https://www.linkedin.com/in/salma-shaik-42401517b" style="color:#38bdf8;">LinkedIn</a> &nbsp;|&nbsp; 
+                💻 <a href="https://github.com/salma123508" style="color:#38bdf8;">GitHub</a> &nbsp;|&nbsp;
+                🏠 <a href="https://salma123508.github.io/Portfolio/" style="color:#38bdf8;">Portfolio</a><br>
+                📍 34 Giles Avenue, Jersey City, NJ 07306
+            </div>
+        </div>
+        <div class="resume-section">
+            <h3>Professional Summary</h3>
+            <p>Master's in Bioinformatics with strong foundation in computational biology and genomics. Experienced in ECG interpretation, biomedical data analysis, and AI-powered diagnostics. Specialized in computational genomics, clinical trials, and machine learning-based disease classification with hands-on experience in TCGA data analysis, protein modeling, and healthcare data management. Demonstrated ability to manage real-world healthcare data and deliver actionable insights using statistical and bioinformatics tools.</p>
+        </div>
+        <div class="resume-section">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li><b>Programming Languages:</b> Python, R, SQL, Bash/Shell scripting</li>
+                <li><b>Bioinformatics Tools:</b> BLAST, NCBI, UniProt, Clustal Omega, SwissModel, Modeller, RaptorX, STRING, Bioconductor</li>
+                <li><b>Machine Learning:</b> TensorFlow, Scikit-learn, Keras, Pandas, NumPy, Matplotlib, Seaborn</li>
+                <li><b>Statistical Analysis:</b> DESeq2, edgeR, clusterProfiler, GOseq, statistical modeling, survival analysis</li>
+                <li><b>Databases:</b> TCGA, GEO, NCBI, Ensembl, UniProt, PubMed</li>
+                <li><b>Healthcare Tools:</b> Cardiologs ECG Software, EHR Systems, Clinical Data Analysis, HIPAA-compliant reporting</li>
+                <li><b>Cloud/Other:</b> Docker, Git, GitHub, Tableau, ggplot2, plotly</li>
+                <li><b>Certifications:</b> Clinical Trials (NIDA), Clinical Data Management, Regulatory Affairs, Base SAS</li>
+            </ul>
+        </div>
+        <div class="resume-section">
+            <h3>Education</h3>
+            <div class="resume-subtitle">Master's in Bioinformatics</div>
+            <div>[University Name], [Location] <span class="resume-date">Graduated: [Year]</span></div>
+            <ul>
+                <li><b>Relevant Coursework:</b> Computational Biology, Genomics, Statistical Analysis, Machine Learning, Clinical Trials</li>
+                <li><b>Research Focus:</b> Computational genomics, protein modeling, disease classification</li>
+            </ul>
+            <div class="resume-subtitle">Certifications</div>
+            <ul>
+                <li>Clinical Trials Certification - NIDA (2021)</li>
+                <li>Clinical Data Management - Cavaxia (2021)</li>
+                <li>Regulatory Affairs - Cavaxia (2021)</li>
+                <li>Base SAS - Cavaxia (2021)</li>
+            </ul>
+        </div>
+        <div class="resume-section">
+            <h3>Experience</h3>
+            <div class="resume-job-title">ECG Analyst Intern</div> | <span class="resume-subtitle">Health Watch (CHC Healthcare), Chennai</span> <span class="resume-date">Nov 2022 - Feb 2023</span>
+            <ul>
+                <li>Conducted beat-by-beat analysis of real patient ECG signals using Cardiologs AI-enhanced software</li>
+                <li>Assessed waveforms for arrhythmias including atrial fibrillation, STEMI, and AV block using structured 5-step analysis</li>
+                <li>Executed regularity, rate, P-wave, and PR/QRS evaluation protocols for accurate cardiac diagnosis</li>
+                <li>Maintained HIPAA-compliant data review, folder validation, and clinical alert generation in 24x7 cardiac telemetry environment</li>
+            </ul>
+            <div class="resume-job-title">Bioinformatics Intern</div> | <span class="resume-subtitle">Kaashiv Infotech, India</span> <span class="resume-date">2022</span>
+            <ul>
+                <li>Executed sequence retrieval, protein modeling, and functional annotation for bacterial genomes</li>
+                <li>Utilized Modeller, RaptorX, and SwissModel for protein structure prediction and domain functionality analysis</li>
+                <li>Collaborated with research team to analyze genomic data and interpret biological significance of findings</li>
+                <li>Developed computational workflows for high-throughput sequence analysis and annotation</li>
+            </ul>
+        </div>
+        <div class="resume-section">
+            <h3>Projects</h3>
+            <div class="resume-subtitle">TCGA Lung Cancer Analysis</div>
+            <div>Bioinformatics Research Project | 2024</div>
+            <ul>
+                <li>Analyzed lung cancer gene expression data from The Cancer Genome Atlas (TCGA) including 950+ samples (LUAD & LUSC)</li>
+                <li>Performed differential expression analysis using DESeq2, identifying 500+ significantly differentially expressed genes</li>
+                <li>Conducted functional enrichment analysis revealing key pathways (p53 signaling, EGFR pathway, immune response regulation)</li>
+                <li>Created comprehensive visualizations including PCA plots, volcano plots, and heatmaps showing distinct tumor-normal separation</li>
+                <li><b>Technologies:</b> R, Bioconductor (TCGAbiolinks, DESeq2, clusterProfiler), Python, ggplot2</li>
+                <li><b>GitHub:</b> <a href="https://github.com/salma123508" style="color:#38bdf8;">github.com/salma123508</a></li>
+            </ul>
+            <div class="resume-subtitle">Genetics of PCOS: Structural and Functional Bioinformatics Pipeline</div>
+            <div>Master's Research Project | 2023</div>
+            <ul>
+                <li>Conducted comprehensive study on 43 protein-coding genes linked to PCOS using integrated bioinformatics approach</li>
+                <li>Performed sequence retrieval, functional annotation, and phylogenetic analysis using Clustal Omega</li>
+                <li>Identified 16 disordered proteins and modeled 3D structures using SwissModel and Modeller 9v14</li>
+                <li>Integrated microarray expression data from GEO, performed clustering and STRING-based protein-protein interaction analysis</li>
+                <li><b>Technologies:</b> NCBI BLAST, UniProt, SwissModel, Modeller, R, STRING database</li>
+                <li><b>Results:</b> Identified key hub genes and structural insights into PCOS pathogenesis</li>
+            </ul>
+            <div class="resume-subtitle">Pneumonia Detection Using CNN</div>
+            <div>Machine Learning Project | 2023</div>
+            <ul>
+                <li>Developed deep learning models (VGG16, ResNeXt50) for pneumonia classification from chest X-ray images</li>
+                <li>Applied data augmentation techniques using Keras ImageDataGenerator to address class imbalance</li>
+                <li>Achieved F1-score of 0.72 on pneumonia-positive class through systematic model optimization</li>
+                <li><b>Technologies:</b> Python, TensorFlow, Keras, OpenCV, Scikit-learn</li>
+            </ul>
+            <div class="resume-subtitle">Biomedical Research Scraper</div>
+            <div>Data Mining Project | 2022</div>
+            <ul>
+                <li>Built automated R pipeline to extract disease-related article metadata from PubMed using rvest and XML packages</li>
+                <li>Parsed abstracts, authorship, and keyword data into structured datasets for trend analysis</li>
+                <li>Created visualization dashboards using ggplot2 to analyze publication trends by year, journal, and research topics</li>
+                <li><b>Technologies:</b> R, rvest, XML, ggplot2, data.table</li>
+            </ul>
+        </div>
+        <div class="resume-section">
+            <h3>Publications & Presentations</h3>
+            <ul>
+                <li><b>"Unveiling the Potential of Therapeutic Mesenchymal Stem Cells in Cancer Treatment"</b><br>
+                International Journal of Applied Research (IJAR)<br>
+                Co-authored research on stem cell therapeutics in oncology, contributing to computational analysis and literature review.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html> 
