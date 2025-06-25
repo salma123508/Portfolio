@@ -83,11 +83,42 @@
         </div>
         <div class="resume-section">
             <h3>Projects</h3>
-            <ul>
-                <li><b>TCGA Lung Cancer Analysis:</b> Analyzed TCGA lung cancer gene expression data to identify molecular subtypes and therapeutic targets using R and Bioconductor.</li>
-                <li><b>Genetics of PCOS:</b> Investigated 43 PCOS-related genes, performed protein modeling, and functional annotation using Python, R, and bioinformatics tools.</li>
-                <li><b>Pneumonia Detection Using CNN:</b> Developed and optimized deep learning models for pneumonia classification from chest X-rays using Python and TensorFlow.</li>
-            </ul>
+            <div style="margin-bottom:12px;"><b>TCGA Lung Cancer Analysis</b><br>
+                <ul>
+                    <li>Analyzed lung cancer gene expression data from The Cancer Genome Atlas (TCGA), including 950+ LUAD & LUSC samples.</li>
+                    <li>Performed differential expression analysis using DESeq2, identifying 500+ significantly differentially expressed genes.</li>
+                    <li>Conducted functional enrichment analysis to reveal key pathways (p53 signaling, EGFR pathway, immune response regulation).</li>
+                    <li>Created comprehensive visualizations: PCA plots, volcano plots, and heatmaps showing distinct tumor-normal separation.</li>
+                </ul>
+                <span style="font-size:0.98em;"><b>Technologies:</b> R, Bioconductor (TCGAbiolinks, DESeq2, clusterProfiler), Python, ggplot2<br>
+                <b>GitHub:</b> <a href="https://github.com/salma123508" style="color:#1a237e;">github.com/salma123508</a></span>
+            </div>
+            <div style="margin-bottom:12px;"><b>Genetics of PCOS: Structural and Functional Bioinformatics Pipeline</b><br>
+                <ul>
+                    <li>Conducted a comprehensive study on 43 protein-coding genes linked to PCOS using an integrated bioinformatics approach.</li>
+                    <li>Performed sequence retrieval, functional annotation, and phylogenetic analysis using Clustal Omega.</li>
+                    <li>Identified 16 disordered proteins and modeled 3D structures using SwissModel and Modeller 9v14.</li>
+                    <li>Integrated microarray expression data from GEO, performed clustering, and STRING-based protein-protein interaction analysis.</li>
+                </ul>
+                <span style="font-size:0.98em;"><b>Technologies:</b> NCBI BLAST, UniProt, SwissModel, Modeller, R, STRING database<br>
+                <b>Results:</b> Identified key hub genes and structural insights into PCOS pathogenesis</span>
+            </div>
+            <div style="margin-bottom:12px;"><b>Pneumonia Detection Using CNN</b><br>
+                <ul>
+                    <li>Developed deep learning models (VGG16, ResNeXt50) for pneumonia classification from chest X-ray images.</li>
+                    <li>Applied data augmentation techniques using Keras ImageDataGenerator to address class imbalance.</li>
+                    <li>Achieved F1-score of 0.72 on pneumonia-positive class through systematic model optimization.</li>
+                </ul>
+                <span style="font-size:0.98em;"><b>Technologies:</b> Python, TensorFlow, Keras, OpenCV, Scikit-learn</span>
+            </div>
+            <div><b>Biomedical Research Scraper</b><br>
+                <ul>
+                    <li>Built an automated R pipeline to extract disease-related article metadata from PubMed using rvest and XML packages.</li>
+                    <li>Parsed abstracts, authorship, and keyword data into structured datasets for trend analysis.</li>
+                    <li>Created visualization dashboards using ggplot2 to analyze publication trends by year, journal, and research topics.</li>
+                </ul>
+                <span style="font-size:0.98em;"><b>Technologies:</b> R, rvest, XML, ggplot2, data.table</span>
+            </div>
         </div>
         <div class="resume-section">
             <h3>Publications & Presentations</h3>
