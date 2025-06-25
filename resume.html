@@ -6,22 +6,24 @@
     <title>Salma Shaik - Resume</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-        body { background: #090040; color: #e2e8f0; }
-        .resume-container { max-width: 900px; margin: 40px auto; background: #1e293b; border-radius: 12px; box-shadow: 0 4px 24px #09004044; padding: 40px 32px; }
-        .resume-header { display: flex; flex-direction: column; align-items: flex-start; border-bottom: 2px solid #471396; padding-bottom: 24px; margin-bottom: 32px; }
-        .resume-header h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.25rem; color: #fff; }
-        .resume-header h2 { font-size: 1.25rem; font-weight: 500; color: #B13BFF; margin-bottom: 0.5rem; }
-        .resume-contact { font-size: 1rem; color: #94a3b8; margin-bottom: 0.5rem; }
+        body { background: #fff; color: #222; }
+        .resume-container { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px #e0e0e0; padding: 40px 32px; }
+        .resume-header { display: flex; flex-direction: column; align-items: flex-start; border-bottom: 2px solid #1a237e; padding-bottom: 24px; margin-bottom: 32px; }
+        .resume-header h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.25rem; color: #1a237e; }
+        .resume-header h2 { font-size: 1.25rem; font-weight: 500; color: #222; margin-bottom: 0.5rem; }
+        .resume-contact { font-size: 1rem; color: #444; margin-bottom: 0.5rem; }
         .resume-section { margin-bottom: 32px; }
-        .resume-section h3 { color: #FFCC00; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 600; }
+        .resume-section h3 { color: #1a237e; font-size: 1.3rem; margin-bottom: 0.75rem; font-weight: 600; }
         .resume-section ul, .resume-section p { margin-bottom: 0.5rem; }
         .resume-section ul { padding-left: 1.2em; }
         .resume-section li { margin-bottom: 0.25rem; }
-        .resume-subtitle { color: #B13BFF; font-weight: 600; font-size: 1.1rem; margin-bottom: 0.2rem; }
-        .resume-job-title { font-weight: 600; color: #fff; }
-        .resume-date { color: #38bdf8; font-size: 0.95rem; margin-left: 0.5em; }
-        .resume-download { display: inline-block; margin-bottom: 24px; padding: 10px 24px; background: #B13BFF; color: #090040; border: none; border-radius: 6px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: background 0.3s; }
-        .resume-download:hover { background: #FFCC00; }
+        .resume-subtitle { color: #1a237e; font-weight: 600; font-size: 1.1rem; margin-bottom: 0.2rem; }
+        .resume-job-title { font-weight: 600; color: #222; }
+        .resume-date { color: #1a237e; font-size: 0.95rem; margin-left: 0.5em; }
+        .resume-download { display: inline-block; margin-bottom: 24px; padding: 10px 24px; background: #1a237e; color: #fff; border: none; border-radius: 6px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: background 0.3s; }
+        .resume-download:hover { background: #3949ab; }
+        a { color: #1a237e; text-decoration: none; }
+        a:hover { text-decoration: underline; }
         @media (max-width: 600px) { .resume-container { padding: 16px 4px; } }
         @media print { .resume-download { display: none; } body { background: #fff; color: #222; } .resume-container { box-shadow: none; background: #fff; color: #222; } }
     </style>
@@ -35,8 +37,7 @@
             <div class="resume-contact">
                 📧 asmasalmask@gmail.com &nbsp;|&nbsp; 📱 +1-603-932-8414 &nbsp;|&nbsp; 
                 🌐 <a href="https://www.linkedin.com/in/salma-shaik-42401517b" style="color:#38bdf8;">LinkedIn</a> &nbsp;|&nbsp; 
-                💻 <a href="https://github.com/salma123508" style="color:#38bdf8;">GitHub</a> &nbsp;|&nbsp;
-                🏠 <a href="https://salma123508.github.io/Portfolio/" style="color:#38bdf8;">Portfolio</a><br>
+                💻 <a href="https://github.com/salma123508" style="color:#38bdf8;">GitHub</a><br>
                 📍 34 Giles Avenue, Jersey City, NJ 07306
             </div>
         </div>
@@ -59,19 +60,7 @@
         </div>
         <div class="resume-section">
             <h3>Education</h3>
-            <div class="resume-subtitle">Master's in Bioinformatics</div>
-            <div>[University Name], [Location] <span class="resume-date">Graduated: [Year]</span></div>
-            <ul>
-                <li><b>Relevant Coursework:</b> Computational Biology, Genomics, Statistical Analysis, Machine Learning, Clinical Trials</li>
-                <li><b>Research Focus:</b> Computational genomics, protein modeling, disease classification</li>
-            </ul>
-            <div class="resume-subtitle">Certifications</div>
-            <ul>
-                <li>Clinical Trials Certification - NIDA (2021)</li>
-                <li>Clinical Data Management - Cavaxia (2021)</li>
-                <li>Regulatory Affairs - Cavaxia (2021)</li>
-                <li>Base SAS - Cavaxia (2021)</li>
-            </ul>
+            <div>New Jersey Institute of Technology (NJIT), Newark, NJ Graduated: May 2025</div>
         </div>
         <div class="resume-section">
             <h3>Experience</h3>
@@ -92,41 +81,10 @@
         </div>
         <div class="resume-section">
             <h3>Projects</h3>
-            <div class="resume-subtitle">TCGA Lung Cancer Analysis</div>
-            <div>Bioinformatics Research Project | 2024</div>
             <ul>
-                <li>Analyzed lung cancer gene expression data from The Cancer Genome Atlas (TCGA) including 950+ samples (LUAD & LUSC)</li>
-                <li>Performed differential expression analysis using DESeq2, identifying 500+ significantly differentially expressed genes</li>
-                <li>Conducted functional enrichment analysis revealing key pathways (p53 signaling, EGFR pathway, immune response regulation)</li>
-                <li>Created comprehensive visualizations including PCA plots, volcano plots, and heatmaps showing distinct tumor-normal separation</li>
-                <li><b>Technologies:</b> R, Bioconductor (TCGAbiolinks, DESeq2, clusterProfiler), Python, ggplot2</li>
-                <li><b>GitHub:</b> <a href="https://github.com/salma123508" style="color:#38bdf8;">github.com/salma123508</a></li>
-            </ul>
-            <div class="resume-subtitle">Genetics of PCOS: Structural and Functional Bioinformatics Pipeline</div>
-            <div>Master's Research Project | 2023</div>
-            <ul>
-                <li>Conducted comprehensive study on 43 protein-coding genes linked to PCOS using integrated bioinformatics approach</li>
-                <li>Performed sequence retrieval, functional annotation, and phylogenetic analysis using Clustal Omega</li>
-                <li>Identified 16 disordered proteins and modeled 3D structures using SwissModel and Modeller 9v14</li>
-                <li>Integrated microarray expression data from GEO, performed clustering and STRING-based protein-protein interaction analysis</li>
-                <li><b>Technologies:</b> NCBI BLAST, UniProt, SwissModel, Modeller, R, STRING database</li>
-                <li><b>Results:</b> Identified key hub genes and structural insights into PCOS pathogenesis</li>
-            </ul>
-            <div class="resume-subtitle">Pneumonia Detection Using CNN</div>
-            <div>Machine Learning Project | 2023</div>
-            <ul>
-                <li>Developed deep learning models (VGG16, ResNeXt50) for pneumonia classification from chest X-ray images</li>
-                <li>Applied data augmentation techniques using Keras ImageDataGenerator to address class imbalance</li>
-                <li>Achieved F1-score of 0.72 on pneumonia-positive class through systematic model optimization</li>
-                <li><b>Technologies:</b> Python, TensorFlow, Keras, OpenCV, Scikit-learn</li>
-            </ul>
-            <div class="resume-subtitle">Biomedical Research Scraper</div>
-            <div>Data Mining Project | 2022</div>
-            <ul>
-                <li>Built automated R pipeline to extract disease-related article metadata from PubMed using rvest and XML packages</li>
-                <li>Parsed abstracts, authorship, and keyword data into structured datasets for trend analysis</li>
-                <li>Created visualization dashboards using ggplot2 to analyze publication trends by year, journal, and research topics</li>
-                <li><b>Technologies:</b> R, rvest, XML, ggplot2, data.table</li>
+                <li><b>TCGA Lung Cancer Analysis:</b> Analyzed TCGA lung cancer gene expression data to identify molecular subtypes and therapeutic targets using R and Bioconductor.</li>
+                <li><b>Genetics of PCOS:</b> Investigated 43 PCOS-related genes, performed protein modeling, and functional annotation using Python, R, and bioinformatics tools.</li>
+                <li><b>Pneumonia Detection Using CNN:</b> Developed and optimized deep learning models for pneumonia classification from chest X-rays using Python and TensorFlow.</li>
             </ul>
         </div>
         <div class="resume-section">
